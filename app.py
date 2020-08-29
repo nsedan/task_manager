@@ -13,6 +13,13 @@ app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
 
 mongo = PyMongo(app)
 
+# @app.route('/')
+# @app.route('/get_tasks')
+# def get_tasks():
+#     _tasks = mongo.db.tasks.find()
+#     task_list = [task for task in _tasks]
+#     return render_template("tasks.html", tasks=task_list)
+
 
 @app.route('/')
 @app.route('/get_tasks')
