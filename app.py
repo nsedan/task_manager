@@ -8,10 +8,6 @@ if path.exists("env.py"):
 
 app = Flask(__name__)
 
-# MONGODB_URI = os.environ.get('MONGO_URI')
-# DBS_NAME = "milestoneTestDB"
-# COLLECTION_NAME = "moviesTestDB"
-
 app.config["MONGO_DBNAME"] = "task_manager"
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
 
